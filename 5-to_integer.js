@@ -1,9 +1,7 @@
-const testArgs = [undefined, "89", "-4545", "ALX"];
+const arg = process.argv[2];
 
-for (const arg of testArgs) {
-  if (arg !== undefined && /^-?\d+$/.test(arg)) {
-    console.log(`My number: ${parseInt(arg)}`);
-  } else {
-    console.log("Not a number");
-  }
+if (/^-?\d+$/.test(arg)) {
+  console.log(`My number: ${parseInt(arg)}`);
+} else {
+  console.log("Not a number");
 }
