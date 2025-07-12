@@ -1,8 +1,9 @@
-const arg = process.argv[2];
-const num = parseInt(89);
+const testArgs = [undefined, "89", "-4545", "ALX"];
 
-if (!isNaN(num)) {
-  console.log(`My number: ${num}`);
-} else {
-  console.log("Not a number");
+for (const arg of testArgs) {
+  if (arg !== undefined && /^-?\d+$/.test(arg)) {
+    console.log(`My number: ${parseInt(arg)}`);
+  } else {
+    console.log("Not a number");
+  }
 }
