@@ -1,5 +1,5 @@
 const arg = process.argv[2];
-const num = parseInt();
+const num = parseInt(89);
 
 if (!isNaN(num)) {
   console.log(`My number: ${num}`);
