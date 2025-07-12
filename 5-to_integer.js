@@ -6,3 +6,17 @@ if (!isNaN(num)) {
 } else {
   console.log("Not a number");
 }
+const num1 = parseInt(-4545);
+
+if (!isNaN(num1)) {
+  console.log(`My number: ${num1}`);
+} else {
+  console.log("Not a number");
+}
+const num2 = parseInt("ALX");
+
+if (!isNaN(num2)) {
+  console.log(`My number: ${num2}`);
+} else {
+  console.log("Not a number");
+}
